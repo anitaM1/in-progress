@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notes - In Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <button id="menuButton" onclick="toggleMenu()">☰</button>
+    <span>My website</span>
+</header>
+
+<hr>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="learning.html">Learning</a>
+    <a href="projects.html">Projects</a>
+    <a href="notes.html">Notes</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<section id="notes">
+    <h1>Notes</h1>
+
+    <div>
+        <h3>HTML</h3>
+        <p>The structure of a website. It defines the content and elements of a web page.</p>
+    </div>
+
+    <div>
+        <h3>CSS</h3>
+        <p>The language used to style websites, including colors, layouts, fonts, and spacing.</p>
+    </div>
+
+    <div>
+        <h3>Python</h3>
+        <p>A programming language used for building applications, automation, data analysis, and AI.</p>
+    </div>
+
+    <div>
+        <h3>Artificial Intelligence</h3>
+        <p>Technology that allows computers to perform tasks that normally require human intelligence.</p>
+    </div>
+
+</section>
+
+</main>
+
+<script>
+function toggleMenu() {
+    const menu = document.querySelector("nav");
+    const button = document.querySelector("#menuButton");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+        button.textContent = "☰";
+    } else {
+        menu.style.display = "flex";
+        button.textContent = "×";
+    }
+}
+
+document.querySelectorAll("nav a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.querySelector("nav").style.display = "none";
+        document.querySelector("#menuButton").textContent = "☰";
+    });
+});
+</script>
+
+</body>
+</html>

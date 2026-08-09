@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - In Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <button id="menuButton" onclick="toggleMenu()">☰</button>
+    <span>My website</span>
+</header>
+
+<hr>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="learning.html">Learning</a>
+    <a href="projects.html">Projects</a>
+    <a href="notes.html">Notes</a>
+    <a href="contact.html">Contact</
+</nav>
+<main>
+<section>
+<h2>Contact</h2><p>how to get in touch with Ms.Mahmoudi</p>
+ <p>instagram = <a href="https://WWW.instagram.com/mahmou.di1"> @mahmoudi.1 </a></p>
+<p>phone number = <a href="tel:09919106331">09919106331</a></p>
+<p>Gmail = <a href="mailto:mahmoudianita015@gmail.com">mahmoudianita015@gmail.com</a></p>
+
+
+</section>
+
+</main>
+
+
+<script>
+function toggleMenu() {
+    const menu = document.querySelector("nav");
+    const button = document.querySelector("#menuButton");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+        button.textContent = "☰";
+    } else {
+        menu.style.display = "flex";
+        button.textContent = "×";
+    }
+}
+
+document.querySelectorAll("nav a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.querySelector("nav").style.display = "none";
+        document.querySelector("#menuButton").textContent = "☰";
+    });
+});
+</script>
+
+</body>
+</html>0
