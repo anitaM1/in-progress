@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head> <title>in progress</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+    <button id="menuButton" onclick="toggleMenu()">☰</button>
+    <span> My website</span>
+    </header> 
+<hr>
+<main>
+<p>hello, welcome to my</p>
+<h1>In progress</h1>
+<p>learning , building , exploring </p>
+</main>
+ <nav>
+    
+    <a href="#about">About</a>
+    <a href="#learning">Learning</a>
+    <a href="#projects">Projects</a>
+    <a href="#notes">Notes</a>
+    <a href="#contact">Contact</a>
+</nav>
+<script>
+function toggleMenu() {
+    const menu = document.querySelector("nav");
+    const button = document.querySelector("#menuButton");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+        button.textContent = "☰";
+    } else {
+        menu.style.display = "flex";
+        button.textContent = "×";
+    }
+}
+
+document.querySelectorAll("nav a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        document.querySelector("nav").style.display = "none";
+        document.querySelector("#menuButton").textContent = "☰";
+    });
+});
+</script>
+
+ <section id="about"><h2>About</h2>
+<p>I'm learning, exploring, and building my way through technology.
+This space is a record of what I'm discovering, creating, and improving along the way.</p></section>
+
+ <section id="learning"><h2>Learning</h2>
+<ul><li>HTML & CSS</li>
+<li>Python</li>
+<li>Web Development</li>
+<li>Artificial Intelligence</li>
+</ul>
+<p>Learning one step at a time.
+</p></section>
+
+ <section id="projects"><h2>Projects</h2>
+<p>A collection of things I'm building while learning.
+From small experiments to bigger projects, this is where ideas turn into something real.
+</p></section>
+
+ <section id="notes"><h2>Notes</h2>
+
+ <div> <h3>HTML</h3>
+    <p>The structure of a website. It defines the content and elements of a web page.</p></div>
+
+
+    
+    <div><h3>CSS</h3>
+    <p>The language used to style websites, including colors, layouts, fonts, and spacing.</p></div>
+
+
+    
+    <div><h3>Python</h3>
+    <p>A programming language used for building applications, automation, data analysis, and AI.</p></div>
+
+
+    <div> <h3> Artificial Intelligence</h3>
+    <p>Technology that allows computers to perform tasks that normally require human intelligence.</p></div>
+</section>
+
+ <section id="contact"> <h2>Contact</h2><p>how to get in touch with Ms.Mahmoudi</p>
+    <p>instagram = <a href="https://WWW.instagram.com/mahmou.di1"> @mahmoudi.1 </a></p>
+<p>phone number = <a href="tel:09919106331">09919106331</a></p>
+<p>Gmail = <a href="mailto:mahmoudianita015@gmail.com">mahmoudianita015@gmail.com</a></p>
+
+
+</section>
+
+
+    </body>
+    
+
+
+</html>
